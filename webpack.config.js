@@ -15,10 +15,8 @@ module.exports = {
 	},
 	plugins: [
 		new HtmlWebpackPlugin({
-			title: "Restaurant page",
+			template: './src/index.html',
 			filename: 'index.html',
-			inject: 'head',
-			scriptLoading: 'defer',
 		})
 	]
 };
