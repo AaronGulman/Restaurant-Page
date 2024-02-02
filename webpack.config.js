@@ -7,7 +7,7 @@ module.exports = {
 	mode: 'development',
 	entry: {
 		bundle: path.resolve(__dirname,'./src/index.js')
-},
+	},
 	output: {
 		path: path.resolve(__dirname,'dist'),
 		filename: '[name][contenthash].js',
@@ -32,7 +32,7 @@ module.exports = {
 			{
 				test: /\.css$/,
 				use: [
-					'style-loader',
+					MiniCssExtractPlugin.loader,
 					'css-loader'
 				],
 			},
@@ -60,6 +60,9 @@ module.exports = {
 			template: './src/index.html',
 			filename: 'index.html',
 		}),
-		new BundleAnalyzerPlugin()
+		new BundleAnalyzerPlugin(),
+		new MiniCssExtractPlugin({
+			filename: '[name][contenthash].css',
+		}),
 	]
 };
