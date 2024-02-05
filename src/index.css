@@ -1,11 +1,15 @@
 body{
 	margin: 0;
 	padding: 0;
+	background-image: url(./assets/londonRest.png);
+	height: 100vh;
+	overflow: none;
+	
 }
 
 header{
 	display: flex;
-	background: #481d1da0;
+	background: #481d1de4;
 	height: 150px;
 	justify-content: center;
 	align-items: center;
@@ -22,4 +26,26 @@ button{
 	border-radius: 5px;
 	background-color: #3d1717;
 	color: #fff;
+}
+
+#content{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background: #481d1de4;
+	width:50%;
+	height: 50%;
+	color: white;
+}
+
+#content h1, p {
+	padding: 10px 10px;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
 }
