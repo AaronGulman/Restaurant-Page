@@ -16,6 +16,9 @@ export function menuPg(){
 	let imgBox1 = document.createElement('div')
 	imgBox1.setAttribute('class','menuBox')
 
+	let textBox = document.createElement('div')
+	textBox.setAttribute('class','textBox')
+
 	let img1 = document.createElement('img')
 
 	img1.setAttribute('class','size')
@@ -30,10 +33,9 @@ export function menuPg(){
 
 	content.appendChild(imgBox1);
 	imgBox1.appendChild(img1);
-	imgBox1.appendChild(img1Header);
-	imgBox1.appendChild(img1Text);
-
-
+	imgBox1.appendChild(textBox)
+	textBox.appendChild(img1Header);
+	textBox.appendChild(img1Text);
 
 
 
