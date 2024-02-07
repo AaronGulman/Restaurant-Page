@@ -20,7 +20,7 @@ export function menuPg(){
 	textBox.setAttribute('class','textBox')
 
 	let nutrValue = document.createElement('div')
-	nutrValue.setAttribute('class','nutrValue nutriVisibile')
+	nutrValue.setAttribute('class','nutrValue')
 	
 
 	let img1 = document.createElement('img')
@@ -34,6 +34,12 @@ export function menuPg(){
 	let img1Header = document.createElement('h1')
 	img1Header.textContent = "Max Burger";
 
+	imgBox1.addEventListener('mouseover', function(){
+		nutrValue.classList.add('nutriVisibile')
+	})
+	imgBox1.addEventListener('mouseleave', function(){
+		nutrValue.classList.remove('nutriVisibile')
+	})
 	
 	content.appendChild(imgBox1);
 	imgBox1.appendChild(img1);
@@ -144,7 +150,7 @@ export function menuPg(){
 	imgBox6.appendChild(img6Header);
 	imgBox6.appendChild(img6Text);
 
-
+	
 
 	
 }
