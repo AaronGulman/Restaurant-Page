@@ -19,23 +19,29 @@ export function menuPg(){
 	let textBox = document.createElement('div')
 	textBox.setAttribute('class','textBox')
 
+	let nutrValue = document.createElement('div')
+	nutrValue.setAttribute('class','nutrValue nutriVisibile')
+	
+
 	let img1 = document.createElement('img')
 
 	img1.setAttribute('class','size')
 	img1.src = "/src/assets/food/burger.png";
 
 	let img1Text = document.createElement('p')
-	img1Text.textContent = "Hello";
+	img1Text.textContent = "Calories: 895 , Carbs: 52, Fat: 60g , Protein: 38g";
 
 	let img1Header = document.createElement('h1')
 	img1Header.textContent = "Max Burger";
 
-
+	
 	content.appendChild(imgBox1);
 	imgBox1.appendChild(img1);
+	imgBox1.appendChild(nutrValue)
 	imgBox1.appendChild(textBox)
 	textBox.appendChild(img1Header);
-	textBox.appendChild(img1Text);
+	nutrValue.appendChild(img1Text);
+	
 
 
 
