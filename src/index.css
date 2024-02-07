@@ -65,10 +65,33 @@ main{
 
 .menuBox{
 	display: flex;
-	justify-content: left;
-	align-items: left;
+	justify-content: space-between;
+
 }
 
 .textBox{
 	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.textBox p {
+	background-color: #000;
+}
+
+.nutrValue{
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #000000c1;
+	width: 150px;
+	height: 100px;
+	padding: 10px;
+	visibility: hidden;
+}
+
+.nutriVisibile{
+	visibility: visible;
 }
