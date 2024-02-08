@@ -8,149 +8,76 @@ export function menuPg(){
 	content.appendChild(articleOne);
 	articleOne.textContent = "Our menu is a culinary masterpiece, carefully crafted to tantalize your taste buds and satisfy your cravings. From the moment you take your first bite of our crispy calamari, you'll be transported to a realm of unparalleled flavor and delight." 
 
+	function menuItem(imgBox,textBox,srcText,nutrText,itemName,nutrValue,img,imgText,price,priceTxt,imgHeader){
 
-	//images
-
-	//img1
+		imgBox = document.createElement('div')
+		imgBox.setAttribute('class','menuBox')
 	
-	let imgBox1 = document.createElement('div')
-	imgBox1.setAttribute('class','menuBox')
-
-	let textBox = document.createElement('div')
-	textBox.setAttribute('class','textBox')
-
-	let nutrValue = document.createElement('div')
-	nutrValue.setAttribute('class','nutrValue')
+		textBox = document.createElement('div')
+		textBox.setAttribute('class','textBox')
 	
-
-	let img1 = document.createElement('img')
-
-	img1.setAttribute('class','size')
-	img1.src = "/src/assets/food/burger.png";
-
-	let img1Text = document.createElement('p')
-	img1Text.textContent = "Calories: 895 , Carbs: 52, Fat: 60g , Protein: 38g";
-
-	let img1Header = document.createElement('h1')
-	img1Header.textContent = "Max Burger";
-
-	imgBox1.addEventListener('mouseover', function(){
-		nutrValue.classList.add('nutriVisibile')
-	})
-	imgBox1.addEventListener('mouseleave', function(){
-		nutrValue.classList.remove('nutriVisibile')
-	})
+		nutrValue = document.createElement('div')
+		nutrValue.setAttribute('class','nutrValue')
+		
 	
-	content.appendChild(imgBox1);
-	imgBox1.appendChild(img1);
-	imgBox1.appendChild(nutrValue)
-	imgBox1.appendChild(textBox)
-	textBox.appendChild(img1Header);
-	nutrValue.appendChild(img1Text);
+		img = document.createElement('img')
 	
-
-
-
-	//img2
-	let imgBox2 = document.createElement('div')
-	imgBox2.setAttribute('class','menuBox')
-	let img2 = document.createElement('img')
-	img2.setAttribute('class','size')
-	img2.src = "/src/assets/food/hotdog.png"
-	content.appendChild(img2);
-
-	let img2Text = document.createElement('p')
-	img2Text.textContent = "Hello";
-
-	let img2Header = document.createElement('h1')
-	img2Header.textContent = "Hotdog";
-
-
-	content.appendChild(imgBox2);
-	imgBox2.appendChild(img2);
-	imgBox2.appendChild(img2Header);
-	imgBox2.appendChild(img2Text);
-
+		img.setAttribute('class','size')
+		img.src = srcText;
 	
-	//img3
-
-	let imgBox3 = document.createElement('div')
-	imgBox3.setAttribute('class','menuBox')
-	let img3 = document.createElement('img')
-	img3.setAttribute('class','size')
-	img3.src = "/src/assets/food/French_Fries.png"
-	content.appendChild(img3);
-
-	let img3Text = document.createElement('p')
-	img3Text.textContent = "Hello";
-	let img3Header = document.createElement('h1')
-	img3Header.textContent = "French Fries";
-
-
-	content.appendChild(imgBox3);
-	imgBox3.appendChild(img3);
-	imgBox3.appendChild(img3Header);
-	imgBox3.appendChild(img3Text);
-
-	//img4
-
-	let imgBox4 = document.createElement('div')
-	imgBox4.setAttribute('class','menuBox')
-	let img4 = document.createElement('img')
-	img4.setAttribute('class','size')
-	img4.src = "/src/assets/food/Nuggets.png"
-	content.appendChild(img4);
-
-	let img4Text = document.createElement('p')
-	img4Text.textContent = "Hello";
-	let img4Header = document.createElement('h1')
-	img4Header.textContent = "Nuggets";
-
-	content.appendChild(imgBox4);
-	imgBox4.appendChild(img4);
-	imgBox4.appendChild(img4Header);
-	imgBox4.appendChild(img4Text);
-
-	//img5
-
-	let imgBox5 = document.createElement('div')
-	imgBox5.setAttribute('class','menuBox')
-	let img5 = document.createElement('img')
-	img5.setAttribute('class','size')
-	img5.src = "/src/assets/food/pizza.png"
-	content.appendChild(img5);
-
-	let img5Text = document.createElement('p')
-	img5Text.textContent = "Hello";
-	let img5Header = document.createElement('h1')
-	img5Header.textContent = "Pizza";
-
-	content.appendChild(imgBox5);
-	imgBox5.appendChild(img5);
-	imgBox5.appendChild(img5Header);
-	imgBox5.appendChild(img5Text);
-
-	//img6
-
-
-	let imgBox6 = document.createElement('div')
-	imgBox6.setAttribute('class','menuBox')
-	let img6 = document.createElement('img')
-	img6.setAttribute('class','size')
-	img6.src = "/src/assets/food/taco.png"
-	content.appendChild(img6);
-
-	let img6Text = document.createElement('p')
-	img6Text.textContent = "Hello";
-	let img6Header = document.createElement('h1')
-	img6Header.textContent = "Taco";
-
-	content.appendChild(imgBox6);
-	imgBox6.appendChild(img6);
-	imgBox6.appendChild(img6Header);
-	imgBox6.appendChild(img6Text);
-
+		imgText = document.createElement('p')
+		imgText.textContent = nutrText;
 	
-
+		price = document.createElement('p')
+		price.textContent = priceTxt;
+		price.setAttribute('class','priceTag')
 	
-}
+		imgHeader = document.createElement('h1')
+		imgHeader.textContent = itemName;
+	
+		imgBox.addEventListener('mouseover', function(){
+			nutrValue.classList.add('nutriVisibile')
+		})
+		imgBox.addEventListener('mouseleave', function(){
+			nutrValue.classList.remove('nutriVisibile')
+		})
+		
+		content.appendChild(imgBox);
+		imgBox.appendChild(img);
+		imgBox.appendChild(nutrValue)
+		imgBox.appendChild(textBox)
+		imgBox.appendChild(price)
+		textBox.appendChild(imgHeader);
+		nutrValue.appendChild(imgText);
+		
+	
+	}
+	
+		let srcText1 = "./src/assets/food/burger.png"
+		let nutrText1 = "Calories: 895 , Carbs: 52, Fat: 60g , Protein: 38g"
+		let itemName1 = "Max burger"
+		let priceTxt1 = '$15'
+		let imgBox1,textBox1,nutrValue1,img1,imgText1,price1,imgHeader1
+	
+		menuItem(
+			
+			imgBox1,textBox1,srcText1,nutrText1,itemName1,nutrValue1,img1,imgText1,price1,priceTxt1,imgHeader1
+	
+			)
+
+		let srcText2 = "./src/assets/food/Hotdog.png"
+		let nutrText2 = "Calories: 895 , Carbs: 52, Fat: 60g , Protein: 38g"
+		let itemName2 = "Max burger"
+		let priceTxt2 = '$15'
+		let imgBox2,textBox2,nutrValue2,img2,imgText2,price2,imgHeader2
+	
+		menuItem(
+			
+			imgBox2,textBox2,srcText2,nutrText2,itemName2,nutrValue2,img2,imgText2,price2,priceTxt2,imgHeader2
+	
+			)
+	
+	
+		}	
+
+		
