@@ -95,3 +95,8 @@ main{
 .nutriVisibile{
 	visibility: visible;
 }
+
+.priceTag{
+	font-weight: bold;
+	font-size: 25px;
+}
