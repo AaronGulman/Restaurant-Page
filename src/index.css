@@ -1,11 +1,10 @@
 body{
 	margin: 0;
 	padding: 0;
-	background-image: url(./assets/londonRest.png);
+	background-image: url(./assets/restaurant.jpg);
 	overflow: none;
-	background-size: cover;
+	background-size: 2649.5px 1763px;
 	background-repeat: no-repeat;
-	
 	
 }
 
@@ -37,7 +36,7 @@ button{
 	background-image: cover;
 	flex-direction: column;
 	background: #481d1de4;
-	width:30%;
+	width:600px;
 	height: 80%;
 	color: white;
 	padding: 20px 20px;
@@ -100,3 +99,14 @@ main{
 	font-weight: bold;
 	font-size: 25px;
 }
+
+#map{
+	height: 400px;
+	width: 600;
+}
+
+@media screen and (min-width: 1763px) and (min-height:2649.5px ){
+	body {
+		background-size: 100%;
+	    }
+	}
