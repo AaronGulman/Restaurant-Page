@@ -1,0 +1,117 @@
+/*!*****************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
+  \*****************************************************************/
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url(restaurant.jpg);
+	overflow: none;
+	background-size: 2649.5px 1763px;
+	background-repeat: no-repeat;
+	
+}
+
+header{
+	display: flex;
+	background: #481d1de4;
+	height: 150px;
+	justify-content: center;
+	align-items: center;
+}
+
+nav{
+	display: flex;
+	gap: 30px;
+}
+
+button{
+	padding: 10px;
+	width: 100px;
+	border-radius: 5px;
+	background-color: #3d1717;
+	color: #fff;
+}
+
+#content{
+	margin-top: 20px;
+	display: flex;
+	align-items: left;
+	background-image: cover;
+	flex-direction: column;
+	background: #481d1de4;
+	width:600px;
+	height: 80%;
+	color: white;
+	padding: 20px 20px;
+	gap: 25px;
+
+
+}
+
+#content h1, p img{
+	padding: 20px 20px;
+}
+
+main{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.size{
+	height:100px;
+	width:100px;
+}
+
+
+.menuBox{
+	display: flex;
+	justify-content: space-between;
+
+}
+
+.textBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.textBox p {
+	background-color: #000;
+}
+
+.nutrValue{
+	position: absolute;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #000000c1;
+	width: 150px;
+	height: 100px;
+	padding: 10px;
+	visibility: hidden;
+}
+
+.nutriVisibile{
+	visibility: visible;
+}
+
+.priceTag{
+	font-weight: bold;
+	font-size: 25px;
+}
+
+#map{
+	height: 400px;
+	width: 600;
+}
+
+@media screen and (min-width: 1763px) and (min-height:2649.5px ){
+	body {
+		background-size: 100%;
+	    }
+	}
+
+/*# sourceMappingURL=bundle36959dac4455b106d81a.css.map*/
