@@ -103,7 +103,7 @@ function menuPg() {
     nutrValue.appendChild(imgText);
   }
   //burger
-  var srcText1 = "./src/assets/food/burger.png";
+  var srcText1 = "/src/assets/burger.png";
   var nutrText1 = "Calories: 895 , Carbs: 52g, Fat: 60g , Protein: 38g";
   var itemName1 = "Max burger";
   var priceTxt1 = '$10';
@@ -112,7 +112,7 @@ function menuPg() {
 
   //French Fries
 
-  var srcText2 = "./src/assets/food/Hotdog.png";
+  var srcText2 = "/src/assets/Hotdog.png";
   var nutrText2 = "Calories: 186 , Carbs: 2g, Fat: 17 g , Protein: 7g";
   var itemName2 = "Hotdog";
   var priceTxt2 = '$5';
@@ -120,7 +120,7 @@ function menuPg() {
   menuItem(imgBox2, textBox2, srcText2, nutrText2, itemName2, nutrValue2, img2, imgText2, price2, priceTxt2, imgHeader2);
 
   //Hotdog
-  var srcText3 = "./src/assets/food/French_Fries.png";
+  var srcText3 = "/src/assets/French_Fries.png";
   var nutrText3 = "Calories: 413 , Carbs: 56.1g, Fat: 19.6g , Protein: 5.7g";
   var itemName3 = "French Fries";
   var priceTxt3 = '$11';
@@ -128,7 +128,7 @@ function menuPg() {
   menuItem(imgBox3, textBox3, srcText3, nutrText3, itemName3, nutrValue3, img3, imgText3, price3, priceTxt3, imgHeader3);
 
   //Nuggets
-  var srcText4 = "./src/assets/food/Nuggets.png";
+  var srcText4 = "/src/assets/Nuggets.png";
   var nutrText4 = "Calories: 417 , Carbs: 25g, Fat: 27g , Protein: 19g";
   var itemName4 = "Nuggets";
   var priceTxt4 = '$15';
@@ -136,7 +136,7 @@ function menuPg() {
   menuItem(imgBox4, textBox4, srcText4, nutrText4, itemName4, nutrValue4, img4, imgText4, price4, priceTxt4, imgHeader4);
 
   //Mexicana
-  var srcText5 = "./src/assets/food/pizza.png";
+  var srcText5 = "/src/assets/pizza.png";
   var nutrText5 = "Calories: 1839 , Carbs: 111g, Fat: 105g , Protein: 111g";
   var itemName5 = "Mexicana";
   var priceTxt5 = '$40';
@@ -144,7 +144,7 @@ function menuPg() {
   menuItem(imgBox5, textBox5, srcText5, nutrText5, itemName5, nutrValue5, img5, imgText5, price5, priceTxt5, imgHeader5);
 
   //Taco
-  var srcText6 = "./src/assets/food/taco.png";
+  var srcText6 = "/src/assets/taco.png";
   var nutrText6 = "Calories: 210 , Carbs: 21g, Fat: 9.9g , Protein: 9.4g";
   var itemName6 = "Taco";
   var priceTxt6 = '$5';
@@ -264,4 +264,4 @@ aboutPage.addEventListener('click', function () {
 
 /******/ })()
 ;
-//# sourceMappingURL=bundle98cabdd77da1aa37fff8.js.map
+//# sourceMappingURL=bundle5e6b4038d6637d42056d.js.map

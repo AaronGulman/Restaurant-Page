@@ -42,7 +42,7 @@ export function menuPg(){
 		nutrValue.appendChild(imgText);
 	}
 		//burger
-		let srcText1 = "./src/assets/food/burger.png"
+		let srcText1 = "/src/assets/burger.png"
 		let nutrText1 = "Calories: 895 , Carbs: 52g, Fat: 60g , Protein: 38g"
 		let itemName1 = "Max burger"
 		let priceTxt1 = '$10'
@@ -51,7 +51,7 @@ export function menuPg(){
 		
 		//French Fries
 
-		let srcText2 = "./src/assets/food/Hotdog.png"
+		let srcText2 = "/src/assets/Hotdog.png"
 		let nutrText2 = "Calories: 186 , Carbs: 2g, Fat: 17 g , Protein: 7g"
 		let itemName2 = "Hotdog"
 		let priceTxt2 = '$5'
@@ -60,7 +60,7 @@ export function menuPg(){
 		menuItem(imgBox2,textBox2,srcText2,nutrText2,itemName2,nutrValue2,img2,imgText2,price2,priceTxt2,imgHeader2)
 		
 		//Hotdog
-		let srcText3 = "./src/assets/food/French_Fries.png"
+		let srcText3 = "/src/assets/French_Fries.png"
 		let nutrText3 = "Calories: 413 , Carbs: 56.1g, Fat: 19.6g , Protein: 5.7g"
 		let itemName3 = "French Fries"
 		let priceTxt3 = '$11'
@@ -69,7 +69,7 @@ export function menuPg(){
 		menuItem(imgBox3,textBox3,srcText3,nutrText3,itemName3,nutrValue3,img3,imgText3,price3,priceTxt3,imgHeader3)
 
 		//Nuggets
-		let srcText4 = "./src/assets/food/Nuggets.png"
+		let srcText4 = "/src/assets/Nuggets.png"
 		let nutrText4 = "Calories: 417 , Carbs: 25g, Fat: 27g , Protein: 19g"
 		let itemName4 = "Nuggets"
 		let priceTxt4 = '$15'
@@ -78,7 +78,7 @@ export function menuPg(){
 		menuItem(imgBox4,textBox4,srcText4,nutrText4,itemName4,nutrValue4,img4,imgText4,price4,priceTxt4,imgHeader4)
 
 		//Mexicana
-		let srcText5 = "./src/assets/food/pizza.png"
+		let srcText5 = "/src/assets/pizza.png"
 		let nutrText5 = "Calories: 1839 , Carbs: 111g, Fat: 105g , Protein: 111g"
 		let itemName5 = "Mexicana"
 		let priceTxt5 = '$40'
@@ -87,7 +87,7 @@ export function menuPg(){
 		menuItem(imgBox5,textBox5,srcText5,nutrText5,itemName5,nutrValue5,img5,imgText5,price5,priceTxt5,imgHeader5)
 
 		//Taco
-		let srcText6 = "./src/assets/food/taco.png"
+		let srcText6 = "/src/assets/taco.png"
 		let nutrText6 = "Calories: 210 , Carbs: 21g, Fat: 9.9g , Protein: 9.4g"
 		let itemName6 = "Taco"
 		let priceTxt6 = '$5'
